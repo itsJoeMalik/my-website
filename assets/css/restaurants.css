@@ -1,0 +1,145 @@
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    position: relative;
+    overflow: hidden;
+    height: 125px;
+    background-image: url('../../Restaurants/drip.png');
+}
+
+.drip-image {
+    position: absolute;
+    top: -50px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px; 
+    height: auto; 
+    animation: melt 3s ease-in-out infinite alternate; 
+}
+
+@keyframes melt {
+    0% {
+        transform: translateX(-50%) scale(1.0);
+    }
+    100% {
+        transform: translateX(-50%) scale(1.1); 
+    }
+}
+
+.con {
+    margin: 40px auto; /* Center horizontally */
+    width: 85%; /* Adjust width as needed */
+    height: 450px;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    gap: 30px;
+}
+.con .container {
+    width: 15%;
+    transition: all ease-in-out 0.2s;
+}
+.con .container:hover {
+    width: 25%;
+}
+.con img {
+    width: 110%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+}
+.con .caption {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding-top: 5px;
+    visibility: hidden;
+    font-size: 19px;
+}
+.con .container:hover .caption {
+    visibility: visible;
+}
+
+.con .caption a{
+    color: blue;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+
+}
+.con .caption a:hover{
+    text-decoration: underline;
+}
+
+.glow-effect {
+transition: box-shadow 0.3s ease;
+}
+
+.glow-effect:hover {
+box-shadow: 0 0 15px rgba(255, 255, 0, 0.8); 
+}
+#paragraph{
+    font-size: 20px; 
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 30px;
+    line-height: 50px; 
+}
+.logo {
+    position: absolute;
+    top: 4%; 
+    left: 11%;
+    width: 5%; 
+    height: auto;
+    
+}
+.nav { 
+    position: absolute; 
+    top: 15%; 
+    left: 33%;             
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 20px; 
+    color: rgb(156, 8, 8);         
+}
+.nav a { 
+    margin-right: 170px; 
+    text-decoration: none; 
+    color: inherit; 
+} 
+.nav a:hover { 
+    text-decoration: underline; 
+    font-style: italic;
+}
+.pizza {
+        position: absolute;
+        bottom: -16%;
+        right: 1%;
+        width: 9%;
+}
+.fries {
+    position: absolute; 
+    top: 17% ; 
+    left: 2%;
+    width: 8%;
+}
+
+.footer {
+    position: relative;
+    overflow: hidden;
+    height: 150px;
+    background-image: url('../../Restaurants/foot.png');
+}
+
+.foot-image {
+    position: absolute;
+    bottom: -50px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px; 
+    height: auto; 
+}
