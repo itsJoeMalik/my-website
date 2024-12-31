@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Themed Website</title>
     <link href="../assets/images/Del.png" type="image/x-icon" rel="icon">
-    <link rel="stylesheet" href="../assets/css/order.css"> 
-    <script src="../assets/js/order.js" defer > </script>
-    
+    <link rel="stylesheet" href="../assets/css/order.css">
 </head>
 <body>
     <div class="container">
@@ -37,10 +35,10 @@
 
             <label for="restaurant">Restaurant Name:</label>
             <select id="restaurant" name="restaurant" required>
-                <option value="" disabled selected>Select</option>
-                <option value="Delicious Fast Food">Delicious Fast Food</option>
-                <option value="Max Potato">Max Potato</option>
+                <option value="default" > select </option>
                 <option value="Alitalia">Alitalia</option>
+                <option value="Max Potato">Max Potato</option>
+                <option value="Delicious Fast Food">Delicious Fast Food</option>
                 <option value="Blue Berry">Blue Berry</option>
                 <option value="Chill & Grill">Chill & Grill</option>
                 <option value="Dr Coffee">Dr Coffee</option>
@@ -51,7 +49,8 @@
 
             <input type="submit" value="Submit">
         </form>
+        <div id="output"></div>
     </div>
-    <script src="script3.js"></script>
+    <script src="../assets/js/order.js"></script>
 </body>
 </html>
