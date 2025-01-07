@@ -31,11 +31,11 @@ body {
 }
 
 .con {
-    margin: 40px auto; /* Center horizontally */
-    width: 85%; /* Adjust width as needed */
+    margin: 40px auto; 
+    width: 85%; 
     height: 450px;
     display: flex;
-    justify-content: center; /* Center content horizontally */
+    justify-content: center; 
     gap: 30px;
 }
 .con .container {
